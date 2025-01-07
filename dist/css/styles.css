@@ -1,0 +1,103 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F9F9F9;
+  color: #333;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header input {
+  width: 80%;
+  max-width: 400px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin: 1rem auto 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+header button {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #2E7D32;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+header button:hover {
+  background-color: #205823;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #F9F9F9;
+}
+main .book {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+main .book:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+main .book img {
+  width: 100%;
+  height: auto;
+}
+main .book .info {
+  padding: 1rem;
+}
+main .book .info h2 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+  color: #4CAF50;
+  text-align: center;
+}
+main .book .info p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+  color: #333;
+}
+main .book .info p:first-of-type {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: auto;
+}/*# sourceMappingURL=styles.css.map */
