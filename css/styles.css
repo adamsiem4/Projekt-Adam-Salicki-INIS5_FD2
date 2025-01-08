@@ -1,8 +1,8 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Kanit", serif;
   margin: 0;
   padding: 0;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   color: #333;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #0088ff;
   color: white;
   text-align: center;
   padding: 1.5rem 1rem;
@@ -38,7 +38,7 @@ header button {
   padding: 0.75rem 2rem;
   font-size: 1rem;
   color: white;
-  background-color: #2E7D32;
+  background-color: #0ef682;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -46,7 +46,7 @@ header button {
   transition: background-color 0.3s;
 }
 header button:hover {
-  background-color: #205823;
+  background-color: #08c969;
 }
 
 main {
@@ -56,7 +56,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 main .book {
   background: white;
@@ -80,7 +80,7 @@ main .book .info {
 main .book .info h2 {
   font-size: 1.25rem;
   margin: 0.5rem 0;
-  color: #4CAF50;
+  color: #0088ff;
   text-align: center;
 }
 main .book .info p {
@@ -96,7 +96,7 @@ main .book .info p:first-of-type {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #4CAF50;
+  background-color: #0088ff;
   color: white;
   font-size: 0.9rem;
   margin-top: auto;

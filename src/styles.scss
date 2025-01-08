@@ -1,11 +1,11 @@
-$primary-color: #4caf50;
-$secondary-color: #2e7d32;
+@use 'sass:color';
+$primary-color: #0088ff;
+$secondary-color: #0ef682;
 $background-color: #f9f9f9;
 $text-color: #333;
 $light-gray: #e0e0e0;
 
-// Fonts
-$font-family: "Roboto", sans-serif;
+$font-family: "Kanit", serif;
 
 body {
 	font-family: $font-family;
@@ -57,7 +57,7 @@ header {
 		transition: background-color 0.3s;
 
 		&:hover {
-			background-color: darken($secondary-color, 10%);
+			background-color: color.adjust($secondary-color, $lightness: -10%);
 		}
 	}
 }
