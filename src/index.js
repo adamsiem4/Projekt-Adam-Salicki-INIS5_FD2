@@ -46,15 +46,15 @@ function displayResults(books) {
 				? description.length > 280
 					? `${description.slice(0, 280)}...`
 					: description
-				: "No description available."
+				: "Brak opisu :("
 
 			return `
             <div class="book">
                 <img src="${bookImg}" alt="${title}">
                 <div class="info">
                     <h2>${title}</h2>
-                    <p><strong>By:</strong> ${
-											authors?.join(", ") || "Unknown"
+                    <p><strong>Autor:</strong> ${
+											authors?.join(", ") || "Nieznany"
 										}</p>
                     <p>${truncatedDescription}</p>
                 </div>
