@@ -1,5 +1,5 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
 	entry: "./src/index.js",
@@ -11,11 +11,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.scss$/,
-				use: [
-					"style-loader", // Injects CSS into the DOM
-					"css-loader", // Translates CSS into CommonJS
-					"sass-loader", // Compiles SASS to CSS
-				],
+				use: ["style-loader", "css-loader", "sass-loader"],
 			},
 			{
 				test: /\.js$/,
@@ -24,13 +20,20 @@ module.exports = {
 					loader: "babel-loader",
 				},
 			},
+			{
+				test: /\.(png|jpe?g|gif|svg)$/i,
+				type: "asset/resource",
+				generator: {
+					filename: "assets/[name][ext]",
+				},
+			},
 		],
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: "./src/index.html", // Source HTML file
-			filename: "index.html", // Output HTML file
+			template: "./src/index.html",
+			filename: "index.html",
 		}),
 	],
 	mode: "development",
-};
+}
