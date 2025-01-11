@@ -38,7 +38,15 @@ function displayResults(books) {
 
 	resultsContainer.innerHTML = books
 		.map(book => {
-			const { title, authors, description, imageLinks } = book.volumeInfo
+			const {
+				title,
+				authors,
+				description,
+				imageLinks,
+				averageRating,
+				language,
+				previewLink,
+			} = book.volumeInfo
 
 			const bookImg = imageLinks?.thumbnail || placeholderImg
 
@@ -56,7 +64,11 @@ function displayResults(books) {
                     <p><strong>Autor:</strong> ${
 											authors?.join(", ") || "Nieznany"
 										}</p>
-                    <p>${truncatedDescription}</p>
+                    <p>${truncatedDescription} <a href="${previewLink}" target="_blank" class="read-more">Dowiedz się więcej</a></p>
+                    <p><strong>Średnia ocena:</strong> ${
+											averageRating || "Brak ocen"
+										}</p>
+                    <p><strong>Język:</strong> ${language || "Nieznany"}</p>
                 </div>
             </div>
         `

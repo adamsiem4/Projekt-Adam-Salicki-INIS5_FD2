@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: #27233A;
+  background-color: #27233a;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -46,7 +46,7 @@ header input {
 }
 header input:focus {
   outline: none;
-  border-color: #B3C0A4;
+  border-color: #b3c0a4;
   box-shadow: 0 0 8px rgba(181, 204, 193, 0.4);
 }
 @media (min-width: 768px) {
@@ -65,7 +65,7 @@ header button {
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background-color: #B3C0A4;
+  background-color: #b3c0a4;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -128,7 +128,7 @@ main .book .info {
 main .book .info h2 {
   font-size: 1rem;
   margin: 0.5rem 0;
-  color: #27233A;
+  color: #27233a;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -148,7 +148,7 @@ main .book .info p:first-of-type {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #27233A;
+  background-color: #27233a;
   color: white;
   font-size: 0.8rem;
 }
